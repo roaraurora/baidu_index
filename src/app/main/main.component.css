@@ -1,0 +1,38 @@
+div.center {
+    margin-top: 150px;
+    position: relative;
+}
+img {
+    width: 300px;
+    height: 150px;
+    padding-left: 70px;
+}
+div.text {
+    padding-right: 0%;
+    margin-left: 0%;
+    display: inline-block;
+}
+div.search-button {
+    padding-left: 0%;
+    margin-right: 0%;
+    display: inline-block;
+    position: relative
+}
+input.text {
+    border: 1px solid #3385FF;
+    font-size: 16px;
+    width: 541px;
+    height: 36px;
+}
+input.submit {
+    width: 100px;
+    height: 40px;
+    background: #3385FF;
+    color: white;
+    border: none;
+    font-size: 16px;
+    margin-left: -8px;
+    position: absolute;
+    left: 0;
+    top: -25px;
+}

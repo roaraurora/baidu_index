@@ -1,0 +1,17 @@
+footer {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -200px
+}
+span.buttom1 {
+    padding-right: 20px;
+    font-size: 13px;
+    color: gray;
+    text-decoration: underline;
+}
+
+span.buttom2 {
+    font-size: 13px;
+    color: gray;
+}
