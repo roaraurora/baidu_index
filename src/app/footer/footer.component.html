@@ -1,14 +1,7 @@
 <footer>
-  <span class="buttom1">把百度设为首页</span>
-  <span class="buttom1">关于百度</span>
-  <span class="buttom1">About Baidu</span>
-  <span class="buttom1">百度推广</span>
+  <span *ngFor="let link1 of links_1" class="buttom1">{{link1.text}}</span>
   <br/>
-  <span class="buttom2">&copy;2018 Baidu </span>
-  <span class="buttom1">使用百度前必读 </span>
-  <span class="buttom1">意见反馈 </span>
-  <span class="buttom2">京ICP证030173号</span>
-  <span class="buttom2">京公网安备1100000020000001号</span>
+  <span *ngFor="let link2 of links_2" class="buttom2">{{link2.text}}</span>
   <br/>
   <br/>
 <footer>

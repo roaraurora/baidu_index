@@ -1,13 +1,7 @@
 <header>
   <span class="top">
       <strong>
-          <a href="#">新闻</a>
-          <a href="#">hao123</a>
-          <a href="#">地图</a>
-          <a href="#">视频</a>
-          <a href="#">贴吧</a>
-          <a href="#">学术</a>
-          <a href="#">设置</a>
+          <a *ngFor="let toplink of topLinks" href="{{toplink.url}}">{{toplink.text}}</a>
           <input type="button" class="button1" value="更多产品" />
       </strong>
   </span>
