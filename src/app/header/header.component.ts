@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Link } from '../link';
+import { Location } from "@angular/common";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +10,9 @@ import { Link } from '../link';
 })
 export class HeaderComponent implements OnInit {
   public topLinks: Link[];
-  constructor() { }
+  public pattern: string;
+  public location: boolean;
+  constructor(private loc: Location, private router: Router) { }
 
   ngOnInit() {
     this.topLinks = [
@@ -20,5 +24,11 @@ export class HeaderComponent implements OnInit {
       { text: '学术', url: '' },
       { text: '设置', url: '' },
     ];
+  }
+  patternHandler(event, patter) {
+    this.router.navigateByUrl("result")
+    this.pattern = event;
+    console.warn(this.pattern)
+    this.location = true;
   }
 }

@@ -1,0 +1,25 @@
+<ul class="search-result">
+  <li *ngFor="let match of resultSet$ | async">
+    <p>venue : {{match.venue}}</p>
+    <div class="card">
+      <div class="card-body">
+        <div class="card-date">
+          <p>where : {{match.location}}</p>
+        </div>
+        <div class="card-title">
+          <h3>
+            {{match.home_team_country}} VS {{match.away_team_country}}
+          </h3>
+          <h4>result {{match.home_team.goals}} : {{match.away_team.goals}}</h4>
+        </div>
+        <div class="card-exceprt">
+          <p>time : {{match.datetime}} weather : {{match.weather.description}}</p>
+          <p>
+            winner : {{match.winner}}
+          </p>
+          <p>team of {{match.home_team_country}}:{{match.officials}}</p>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>

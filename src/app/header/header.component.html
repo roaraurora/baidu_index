@@ -6,3 +6,6 @@
       </strong>
   </span>
 </header>
+<app-main (searchPattern)="patternHandler($event)" *ngIf="!location"></app-main>
+<app-result *ngIf="location" [code]="pattern"></app-result>
+<app-footer *ngIf="!location"></app-footer>
